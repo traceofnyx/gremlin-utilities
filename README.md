@@ -32,5 +32,7 @@ More tools. More chaos. More flair.
 No license. Just don't be evil. Or do. But if you do, at least write readable code.
 
 Built by TraceOfNyx
+
 Maintained by James
+
 Fueled by existential dread and binary riddles.
