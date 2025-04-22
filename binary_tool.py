@@ -7,6 +7,7 @@
 
 from datetime import datetime
 
+# logging into a file
 def log_result(input_data, output_data, mode):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_entry = f"[{timestamp}] MODE: {mode} | INPUT: {input_data} | OUTPUT: {output_data}\n"
@@ -15,6 +16,7 @@ def log_result(input_data, output_data, mode):
         file.write(log_entry)
 
 
+# changing binary into text using ASCII
 def binary_to_text(binary_string):
     binary_values = binary_string.split()
 
@@ -27,6 +29,7 @@ def binary_to_text(binary_string):
     return ''.join(characters)
 
 
+# changing text into binary using ASCII
 def text_to_binary(text_string):
     text_chars = [char for char in text_string]
 
@@ -35,6 +38,7 @@ def text_to_binary(text_string):
     return ' '.join(binary_coded)
 
 
+# magic happens
 def main():
     while True:
         which_mode = input("Text or Binary? T/B ").upper()
